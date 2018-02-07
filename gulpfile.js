@@ -10,7 +10,7 @@ let uglify = require('gulp-uglify');
 let reload = require('reload');
 let gulpTabify = require('gulp-tabify');
 
-let js_input_files = ['js/jquery-3.2.1.slim.js', 'js/popper.js', 'js/bootstrap.js'];
+let js_input_files = ['js/bootstrap.js'];
 
 gulp.task('combine-js', () => {
 	return gulp.src(js_input_files)

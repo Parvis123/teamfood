@@ -5930,6 +5930,16 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(50, 50, 50, 0.61)), url("../images/background.jpeg");
   background-size: cover; }
 
+.contact-page {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(50, 50, 50, 0.61)), url("../images/contact-background.jpeg");
+  background-size: cover; }
+
+.about-page {
+  height: 100%;
+  background: url("../images/biscuits-background.jpg");
+  background-size: cover; }
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;

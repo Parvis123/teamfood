@@ -8,8 +8,9 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link rel="stylesheet" href="css/styles.css"">
+		<link rel="stylesheet" href="css/styles.min.css">
 		<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		 <div class="site-wrapper contact-page">
@@ -31,10 +32,50 @@
 				  	</header>
 
 					<main role="main" class="inner cover">
-						<h1 class="cover-heading">Contact TeamFood</h1>
-						<p class="lead">TeamFood is Daniel Stephenson, Deanna Marbeck, Michael Parvis and Victoria Brooke.</p>
-						<p>Contact us at <a href="https://developme.training/fellowship/">DevelopMe</a>.</p>
+						<p class="lead teamfood">TeamFood is Daniel Stephenson, Deanna Marbeck, Michael Parvis and Victoria Brooke.</p>
+						<form>
+							<div class="form-section">
+								<label for="inname">Name *</label>
+								<input type="text" name="namein" id="inname" placeholder="Joe Bloggs" />
+							</div>
+							<div class="form-section">
+								<label for="inemail">Email *</label>
+								<input type="email" name="emailin" id="inemail" placeholder="somewhere@somewhere.com" />
+							</div>
+							<div class="form-section">
+								<label for="message">Message</label>
+								<textarea id="message" name="message" placeholder="Message"></textarea>
+							</div>
+							<input class="btn" type="submit" value="Send" />
+						</form>
+						<p class="contact">Contact us at</p><a href="https://developme.training/fellowship/" class="devme">DevelopMe</a>
 
+						<nav>
+							<ul class="social">
+								<li>
+									<a href="https://www.facebook.com/developme.training/" target="_blank">
+										<span class="fa-stack fa-lg">
+				  							<i class="fa fa-circle fa-stack-2x"></i>
+				  							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+								</li>
+								<li><a href="https://www.instagram.com/develop_me_uk/" target="_blank">
+										<span class="fa-stack fa-lg">
+				  							<i class="fa fa-circle fa-stack-2x"></i>
+				  							<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+										</span>
+									</a></li>
+								<li>
+									<a href="https://www.linkedin.com/company/develop-me-training" target="_blank">
+										<span class="fa-stack fa-lg">
+				  							<i class="fa fa-circle fa-stack-2x"></i>
+				  							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
 					</main>
 
 					<footer class="mastfoot">

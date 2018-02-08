@@ -1,1 +1,18 @@
-//Our customisations
+//HEADER
+
+nav {
+	background: hsla(360, 15%, 62%, 0.87);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	justify-content: center;
+}
+
+.active {
+	// color: red;
+	font-style: bold;
+}
+
+.nav-link:hover {
+	color: red;
+	
+}

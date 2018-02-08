@@ -11,10 +11,11 @@ let reload = require('reload');
 let gulpTabify = require('gulp-tabify');
 
 let js_input_files = ['js/bootstrap.js'];
+let browserSync = require('browser-sync')
 
 gulp.task('combine-js', () => {
 	return gulp.src(js_input_files)
-		.pipe(concat('all.js'))
+		.pipe(concat('*.js'))
 		.pipe(gulp.dest('./js/'));
 });
 
@@ -51,4 +52,19 @@ gulp.task('styles', function(callback){
 gulp.task('watch', function () {
 	gulp.watch('./scss/*.scss', ['styles']);
 	gulp.watch(js_input_files, ['js-preparation']);
+});
+
+gulp.task('rebuild-then-reload', ['styles','js-preparation'], function (done) {
+    browserSync.reload();
+    done();
+});
+
+gulp.task('watchrefresh', function () {
+	browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
+	gulp.watch(['./scss/*.scss', './*.html', './*.js'], ['rebuild-then-reload']);
 });

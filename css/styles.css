@@ -1,5 +1,5 @@
 nav {
-  background: rgba(173, 144, 144, 0.87);
+  background: rgba(88, 65, 65, 0.5);
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: center;
@@ -5906,12 +5906,15 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333; }
-
-body {
+  /* basic text setting */
   color: #fff;
   text-align: center;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); }
+
+.home-page {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(50, 50, 50, 0.61)), url("../images/background.jpeg");
+  background-size: cover; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -6009,6 +6012,3 @@ body {
   .mastfoot,
   .cover-container {
     width: 42rem; } }
-
-body {
-  background-color: green; }

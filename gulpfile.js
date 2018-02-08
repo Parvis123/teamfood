@@ -10,7 +10,7 @@ let uglify = require('gulp-uglify');
 
 // let reload = require('reload');
 let tabify = require('gulp-tabify');
-//let htmlmin = require('gulp-htmlmin');
+let htmlmin = require('gulp-htmlmin');
 
 let js_input_files = ['js/bootstrap.js'];
 let browserSync = require('browser-sync')

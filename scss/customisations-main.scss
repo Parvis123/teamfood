@@ -18,89 +18,10 @@ nav {
 	margin: 5px;
 }
 
-form {
-	margin: 10px;
-
-	.form-section {
-		padding: 5px;
-		margin: auto;
-		text-align: center;
-		textarea {
-			height: 60px;
-			resize: none;
-		}
-		input, textarea {
-			width: 80%;
-			margin: auto;
-			border-radius: 2px;
-			background: hsla(0, 15%, 70%, 0.6);
-			display: block;
-			box-shadow: 1px 1px silver;
-			border-style: none;
-			padding: 5px;
-			&::placeholder {
-				color: silver;
-			}
-			&:focus {
-				background: hsla(0, 15%, 55%, 0.8);
-			}
-		}
-		label {
-			display:block;
-			margin: auto;
-			text-align: center;
-		}
-
-	}
-
-	input[type="submit"] {
-		background: hsla(0, 15%, 30%, 0.6);
-		color: rgba(255, 255, 255, 0.8);
-		font-weight: bold;
-		margin-top: 5px;
-		&:hover {
-			background-color: hsla(0, 15%, 55%, 0.8);
-
-		}
-	}
+body {
+	cursor: url('./../images/fork.png'), default;
 }
 
-.teamfood {
-	padding-top: 10px;
-}
-
-.devme {
-	font-weight: bold;
-}
-
-nav .social {
-		padding: 0px;
-		margin: 0px;	
-	ul {
-		padding: 0px;
-	}
-	li {
-	display: inline-block;
-	color: rgba(255, 255, 255, 0.8);
-	}
-	a:hover {
-		.fa-circle {
-			color: hsla(0, 15%, 30%, 0.6);
-		}
-	}
-}
-.contact {
-	margin: 0px;
-}
-.inner {
-	padding-top:1rem;
-}
-
-.fa-circle {
-
-	color: hsla(0, 15%, 55%, 0.8);
-
-}
-.fa {
-	color: hsla(0, 15%, 70%, 0.6);
+a:hover {
+		cursor: url('./../images/knife.png'), pointer;
 }

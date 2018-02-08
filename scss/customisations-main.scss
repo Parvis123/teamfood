@@ -22,6 +22,23 @@ body {
 	cursor: url('./../images/fork.png'), default;
 }
 
-a:hover {
-		cursor: url('./../images/knife.png'), pointer;
+a:hover, input[type="submit"] {
+	cursor: url('./../images/knife.png'), pointer;
+}
+
+form {
+	margin: 10px;
+
+	.form-section {
+		padding: 5px;
+		text-align: middle;
+		label {
+			padding-right: 10px;
+		}
+	}
+
+	input[type="submit"] {
+		background: hsla(0, 15%, 30%, 0.5);
+		color: rgba(255, 255, 255, 0.8);
+	}
 }

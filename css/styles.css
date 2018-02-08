@@ -16,8 +16,19 @@ nav {
 body {
   cursor: url("./../images/fork.png"), default; }
 
-a:hover {
+a:hover, input[type="submit"] {
   cursor: url("./../images/knife.png"), pointer; }
+
+form {
+  margin: 10px; }
+  form .form-section {
+    padding: 5px;
+    text-align: middle; }
+    form .form-section label {
+      padding-right: 10px; }
+  form input[type="submit"] {
+    background: rgba(88, 65, 65, 0.5);
+    color: rgba(255, 255, 255, 0.8); }
 
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)

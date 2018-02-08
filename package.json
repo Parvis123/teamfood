@@ -4,14 +4,16 @@
   "description": "teamfood",
   "main": "index.js",
   "dependencies": {
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sequence": "^1.0.0",
     "gulp-tabify": "0.0.2",
+    "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0",
-    "reload": "^2.2.2"
   },
   "devDependencies": {},
   "scripts": {

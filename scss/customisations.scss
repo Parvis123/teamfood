@@ -34,6 +34,21 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; 
 }
+
+.images {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-style: solid;
+      border: 6px solid silver;  
+      border-image-source: linear-gradient(grey, silver, grey );
+      border-image-slice: 20;
+    }
+}
 /*
  * Base structure
  */
@@ -60,9 +75,16 @@ body {
   /* bottom, image */
   url("../images/background.jpeg");
   background-size: cover;
-
+  text-align: left;
 
 }
+
+.front-font {
+    font-weight: bold;
+    font-style: italic;
+    color: lightblue;
+
+    }
 
 .contact-page {
    height: 100%;
@@ -105,6 +127,7 @@ body {
 .inner {
   padding: 2rem;
 }
+
 
 
 /*

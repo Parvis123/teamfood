@@ -19,5 +19,9 @@ nav {
 }
 
 body {
-	cursor: url('images/hotdog.svg'), auto;
+	cursor: url('./../images/fork.png'), default;
+}
+
+a:hover {
+		cursor: url('./../images/knife.png'), pointer;
 }

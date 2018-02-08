@@ -1,3 +1,7 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
 nav {
   background: rgba(88, 65, 65, 0.5);
   padding-top: 10px;
@@ -13,11 +17,7 @@ nav {
 .nav-link {
   margin: 5px; }
 
-body {
-  cursor: url("./../images/fork.png"), default; }
 
-a:hover {
-  cursor: url("./../images/knife.png"), pointer; }
 
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)

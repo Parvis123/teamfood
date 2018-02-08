@@ -1,1 +1,19 @@
-//Our customisations
+//HEADER
+
+nav {
+	background: hsla(0, 15%, 30%, 0.5);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	justify-content: center;
+	text-weight: bold;
+	width: 100%;
+
+}
+.clearfix {
+	text-align: center;
+	display: block;
+
+}
+.nav-link {
+	margin: 5px;
+}

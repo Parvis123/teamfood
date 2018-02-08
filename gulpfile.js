@@ -7,20 +7,44 @@ let gulpSequence = require('gulp-sequence');
 
 let concat = require('gulp-concat');
 let uglify = require('gulp-uglify');
-let reload = require('reload');
-let gulpTabify = require('gulp-tabify');
+
+// let reload = require('reload');
+let tabify = require('gulp-tabify');
 
 let js_input_files = ['js/bootstrap.js'];
 let browserSync = require('browser-sync')
+ 
+gulp.task('tabify-html', function () {
+  gulp.src('./*.html')
+    .pipe(tabify(4, true))
+    .pipe(gulp.dest('./')); 
+});
+
+gulp.task('tabify-css', function () {
+  gulp.src('./css/*.css')
+    .pipe(tabify(4, true))
+    .pipe(gulp.dest('./css/')); 
+});
+
+gulp.task('tabify-scss', function () {
+  gulp.src('./scss/*.scss')
+    .pipe(tabify(4, true))
+    .pipe(gulp.dest('./scss/')); 
+});
+
+gulp.task('tabify', function(callback){
+	gulpSequence('tabify-html', 'tabify-css', 'tabify-scss')(callback)
+});
+
 
 gulp.task('combine-js', () => {
 	return gulp.src(js_input_files)
-		.pipe(concat('*.js'))
+		.pipe(concat('combined.js'))
 		.pipe(gulp.dest('./js/'));
 });
 
 gulp.task('minify-js', () => {
-	return gulp.src('js/all.js')
+	return gulp.src('js/combined.js')
 		.pipe(uglify())
 		.pipe(rename('all.min.js'))
 		.pipe(gulp.dest('./js/'));

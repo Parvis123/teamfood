@@ -10,6 +10,7 @@ let uglify = require('gulp-uglify');
 
 // let reload = require('reload');
 let tabify = require('gulp-tabify');
+let htmlmin = require('gulp-htmlmin');
 
 let js_input_files = ['js/bootstrap.js'];
 let browserSync = require('browser-sync')
@@ -36,6 +37,11 @@ gulp.task('tabify', function(callback){
 	gulpSequence('tabify-html', 'tabify-css', 'tabify-scss')(callback)
 });
 
+gulp.task('minify-html', function() {
+  return gulp.src('./*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist/simplehtml'));
+});
 
 gulp.task('combine-js', () => {
 	return gulp.src(js_input_files)

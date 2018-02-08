@@ -6,8 +6,14 @@ nav {
 	padding-bottom: 10px;
 	justify-content: center;
 	text-weight: bold;
-}
+	width: 100%;
 
+}
+.clearfix {
+	text-align: center;
+	display: block;
+
+}
 .nav-link {
 	margin: 5px;
 }
@@ -20,4 +26,7 @@ nav {
 .nav-link:hover {
 	color: orange;
 	
+}
+.inner {
+	display: block;
 }

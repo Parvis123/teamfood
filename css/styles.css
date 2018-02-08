@@ -3,7 +3,12 @@ nav {
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: center;
-  text-weight: bold; }
+  text-weight: bold;
+  width: 100%; }
+
+.clearfix {
+  text-align: center;
+  display: block; }
 
 .nav-link {
   margin: 5px; }
@@ -13,6 +18,9 @@ nav {
 
 .nav-link:hover {
   color: orange; }
+
+.inner {
+  display: block; }
 
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
@@ -5963,12 +5971,6 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff; }
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left; }
-  .nav-masthead {
-    float: right; } }
 
 /*
  * Cover

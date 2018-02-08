@@ -4,7 +4,12 @@
   "description": "teamfood",
   "main": "index.js",
   "dependencies": {
+<<<<<<< Updated upstream
     "browser-sync": "^2.23.6",
+=======
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+>>>>>>> Stashed changes
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.1",
@@ -12,8 +17,17 @@
     "gulp-sass": "^3.1.0",
     "gulp-sequence": "^1.0.0",
     "gulp-tabify": "0.0.2",
+<<<<<<< Updated upstream
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0"
+=======
+    "gulp-watch": "^5.0.0",
+    "html": "^1.0.0",
+    "http": "0.0.0",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "reload": "^2.2.2"
+>>>>>>> Stashed changes
   },
   "devDependencies": {},
   "scripts": {

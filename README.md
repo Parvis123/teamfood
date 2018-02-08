@@ -15,7 +15,8 @@ These instructions will get a copy of the project up and running on your local m
 If you don't have Gulp, install using
 ```
 $ npm install gulp-cli -g
-$ npm install gulp -D```
+$ npm install gulp -D
+```
 
 ## Installing
 
@@ -27,14 +28,15 @@ $ git init //start npm and git
 $ git remote add origin git@github.com:Parvis123/teamfood.git
 $ git fetch
 $ git checkout master //get the repository on your local machine
-$ npm install //install the packages from package.json to your local folder.```
+$ npm install //install the packages from package.json to your local folder.
+```
 
 You can now make a branch from development and progress as usual.  Do NOT merge straight into master, create a pull request to merge your local branch to development.
 
 We have several Gulp tasks set up in the gulpfile.js to help you work.
-```gulp tabify``` will give the html, css and scss files a tab indent and fix any stray spaces.
-```gulp watchrefresh``` will automatically update the browser
-```gulp watch``` will minify the js, css and scss files.
+`gulp tabify` will give the html, css and scss files a tab indent and fix any stray spaces.
+`gulp watchrefresh` will automatically update the browser
+`gulp watch` will minify the js, css and scss files.
 
 ## Questions?
 

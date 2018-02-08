@@ -27,21 +27,26 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: 
-  /* top, transparent red, faked with gradient */ 
-  linear-gradient(
-    rgba(0, 0, 0, 0.65), 
-    rgba(50, 50, 50, 0.60)
-  ),
-  /* bottom, image */
-  url("../images/background.jpeg");
   
-  background-repeat: no-repeat;
-  background-size: cover;
   /* basic text setting */
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+
+}
+
+.home-page {
+   height: 100%;
+   background: 
+  /* top, transparent red, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.65), 
+    rgba(50, 50, 50, 0.61)
+  ),
+  /* bottom, image */
+  url("../images/background.jpeg");
+  background-size: cover;
+
 
 }
 

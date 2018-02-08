@@ -5890,13 +5890,15 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(50, 50, 50, 0.6)), url("../images/background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
   /* basic text setting */
   color: #fff;
   text-align: center;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); }
+
+.home-page {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(50, 50, 50, 0.61)), url("../images/background.jpeg");
+  background-size: cover; }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {

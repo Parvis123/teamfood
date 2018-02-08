@@ -1,5 +1,39 @@
-# teamfood.readme
+# TeamFood.readme
 
+A project to demonstrate our use of Github, Git, Gulp and Npm, while working in a team on a shared repository.
+
+## Getting started
+
+These instructions will get a copy of the project up and running on your local machine for development and testing purposes. 
+
+## Prerequisites
+
+* Node 
+* Npm
+* Gulp
+
+If you don't have Gulp, install using
+```
+$ npm install gulp-cli -g
+$ npm install gulp -D```
+
+## Installing
+
+Set up a directory for the project on your local machine.
+Pull down the master repository using git.
+Run ```npm install``` to install the packages from package.json to your local folder.
+
+We have several Gulp tasks set up in the gulpfile.js to help you work.
+```gulp tabify``` will give the html, css and scss files a tab indent and fix any stray spaces.
+```gulp watchrefresh``` will automatically update the browser
+```gulp watch``` will minify the js, css and scss files.
+
+## Questions?
+
+Please contact TeamFood - Dan, Deanna, Michael and Vikki.
+
+
+<!-- 
 
 # Setting up process from scratch:
 
@@ -67,4 +101,4 @@
 	let uglify = require('gulp-uglify') // takes js files and makes the file much shorter, reducing the file's kb
 	let gulpTabify = require('gulp-tabify') // changes coding file's spaces to tabs
 
-	let browserSync = require('browser-sync') // needed for automatic browser refreshing upon changing code
+	let browserSync = require('browser-sync') // needed for automatic browser refreshing upon changing code -->

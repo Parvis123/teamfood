@@ -2,13 +2,17 @@ nav {
   background: rgba(173, 144, 144, 0.87);
   padding-top: 10px;
   padding-bottom: 10px;
-  justify-content: center; }
+  justify-content: center;
+  text-weight: bold; }
+
+.nav-link {
+  margin: 5px; }
 
 .active {
-  font-style: bold; }
+  border: 2px thick red; }
 
 .nav-link:hover {
-  color: red; }
+  color: orange; }
 
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)

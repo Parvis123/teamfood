@@ -7,11 +7,10 @@ let gulpSequence = require('gulp-sequence');
 
 let concat = require('gulp-concat');
 let uglify = require('gulp-uglify');
-let reload = require('reload');
 let gulpTabify = require('gulp-tabify');
 
 let js_input_files = ['js/bootstrap.js'];
-let browserSync = require('browser-sync')
+let browserSync = require('browser-sync');
 
 gulp.task('combine-js', () => {
 	return gulp.src(js_input_files)

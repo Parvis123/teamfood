@@ -5,14 +5,19 @@ nav {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	justify-content: center;
+	text-weight: bold;
+}
+
+.nav-link {
+	margin: 5px;
 }
 
 .active {
 	// color: red;
-	font-style: bold;
+	border: 2px thick red;
 }
 
 .nav-link:hover {
-	color: red;
+	color: orange;
 	
 }

@@ -13,15 +13,6 @@ nav {
 .nav-link {
   margin: 5px; }
 
-.active {
-  border: 2px thick red; }
-
-.nav-link:hover {
-  color: orange; }
-
-.inner {
-  display: block; }
-
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors

@@ -20,8 +20,16 @@ $ npm install gulp -D```
 ## Installing
 
 Set up a directory for the project on your local machine.
-Pull down the master repository using git.
-Run ```npm install``` to install the packages from package.json to your local folder.
+Change to that directory and run the following:
+```
+$ npm init
+$ git init //start npm and git
+$ git remote add origin git@github.com:Parvis123/teamfood.git
+$ git fetch
+$ git checkout master //get the repository on your local machine
+$ npm install //install the packages from package.json to your local folder.```
+
+You can now make a branch from development and progress as usual.  Do NOT merge straight into master, create a pull request to merge your local branch to development.
 
 We have several Gulp tasks set up in the gulpfile.js to help you work.
 ```gulp tabify``` will give the html, css and scss files a tab indent and fix any stray spaces.

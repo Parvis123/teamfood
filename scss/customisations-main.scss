@@ -17,3 +17,11 @@ nav {
 .nav-link {
 	margin: 5px;
 }
+
+body {
+	cursor: url('./../images/fork.png'), default;
+}
+
+a:hover {
+		cursor: url('./../images/knife.png'), pointer;
+}
